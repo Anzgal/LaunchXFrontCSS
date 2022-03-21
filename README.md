@@ -1,7 +1,7 @@
 # LaunchXFrontCSS
 Práctica de la segunda semana de la Misión Frontend del programa LaunchX de InnovaccionVirtual
 
-** Para el módulo de CSS de LaunchX se solicitó replicar el diseño de una Landing Page con temática de la vacunación contra el COVID-19 y crear una campaña de marketing para invitar a la población a vacunarse **
+**Para el módulo de CSS de LaunchX se solicitó replicar el diseño de una Landing Page con temática de la vacunación contra el COVID-19 y crear una campaña de marketing para invitar a la población a vacunarse**
 
 # Campaña de marketing
 ![Campaña de Marketing](https://github.com/Anzgal/LaunchXFrontCSS/blob/main/Campa%C3%B1a%20de%20marketing.png?raw=true)
