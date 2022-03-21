@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vacuna</title>
+    <meta name="description" content="Basic HTML/Tailwind starter" />
+    <meta name="author" content="Daily Dev Tips" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <div class="absolute top-0 z-50 w-full bg-opacity-80 bg-white">
+      <div class="relative py-6 px-4 sm:px-6 lg:px-8">
+        <nav
+          class="relative flex items-center justify-between sm:h-10"
+          aria-label="Global"
+        >
+          <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div
+              class="flex items-center justify-between w-full md:w-auto opacity-100"
+            >
+              <a href="#">
+                <span class="sr-only">Vaccination</span>
+                <span class="text-2xl font-extrabold text-indigo-700">
+                  Vaccination
+                </span>
+              </a>
+              <div class="-mr-2 flex items-center md:hidden">
+                <button
+                  type="button"
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <!-- Heroicon name: outline/menu -->
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden md:block lg:mr-12 lg:pr-4 lg:space-x-12 md:space-x-8"
+          >
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
+              >Database</a
+            >
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
+              >Education</a
+            >
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
+              >News</a
+            >
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
+              >Regulation</a
+            >
+
+            <a
+              href="#"
+              class="font-medium text-white bg-blue-700 px-7 py-3 rounded-md"
+              >Hoax Buster</a
+            >
+          </div>
+        </nav>
+      </div>
+
+      <!--Mobile menu, show/hide based on menu open state.-->
+      <div
+        class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+      >
+        <div
+          class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden"
+        >
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <span class="text-xl font-extrabold text-indigo-700"
+                >Vaccination</span
+              >
+            </div>
+            <div class="-mr-2">
+              <button
+                type="button"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              >
+                <span class="sr-only">Close main menu</span>
+                <!-- Heroicon name: outline/x -->
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              >Database</a
+            >
+
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              >Education</a
+            >
+
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              >News</a
+            >
+
+            <a
+              href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              >Regulation</a
+            >
+          </div>
+          <a
+            href="#"
+            class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-100 hover:bg-gray-200"
+          >
+            Hoax Buster
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar end -->
+
+    <div class="relative bg-white overflow-hidden top-0">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-36 xl:pb-40"
+        >
+          <main
+            class="pt-32 mx-auto max-w-7xl max-w- px-4 sm:pt-24 sm:px-6 md:pt-32 lg:pt-32 lg:pb-32 lg:px-28 xl:pt-40"
+          >
+            <div class="sm:text-center lg:text-left">
+              <h1
+                class="text-4xl tracking-normal font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
+              >
+                <span class="block text-gray-800 xl:inline">Fight Virus</span>
+                <span class="block text-gray-800 xl:inline">With Vaccines</span>
+              </h1>
+              <p
+                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+              >
+                Let's stop this pandemic by killing the virus with a vaccine,
+                don't let yourself and your family get infected
+              </p>
+              <div
+                class="mt-5 sm:mt-12 flex sm:justify-start lg:justify-start px-2 md:px-28 lg:px-6"
+              >
+                <div
+                  class="w-full flex items-center justify-start text-base font-medium text-gray-800 md:py-4 md:text-lg"
+                >
+                  <div
+                    class="bg-yellow-100 text-yellow-500 p-2 rounded-full mr-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  Best protection
+                </div>
+
+                <div
+                  class="w-full flex items-center justify-end text-base font-medium text-gray-800 md:py-4 md:text-lg"
+                >
+                  <div
+                    class="bg-yellow-100 text-yellow-500 p-2 rounded-full mr-3"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                      />
+                    </svg>
+                  </div>
+                  Selected Vaccines
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img
+          class="h-bottomImg w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+          src="https://github.com/Anzgal/LaunchXFrontCSS/blob/main/assets/nurse.png?raw=true"
+          alt=""
+        />
+      </div>
+      <div
+        class="md:w-3/4 w-5/6 z-20 bg-none absolute bottom-0 md:bottom-16 left-1/2 transform -translate-x-1/2 md:h-10 my-10"
+      >
+        <div class="relative mx-auto">
+          <dl class="rounded-lg bg-white shadow-2xl sm:grid sm:grid-cols-4">
+            <div
+              class="flex flex-col border-b border-gray-100 p-6 sm:border-0 sm:border-r"
+            >
+              <dt
+                class="order-2 mt-2 text-sm leading-6 font-medium text-gray-800"
+              >
+                <p class="ml-8">Jakarta Utara</p>
+              </dt>
+              <dd class="order-1 text-sm font-extrabold text-gray-600">
+                <div
+                  class="absolute flex items-center justify-center h-6 w-6 rounded-md bg-indigo-200 text-indigo-800"
+                >
+                  <!-- Heroicon name: outline/annotation -->
+                  <svg
+                    class="h-3 w-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="ml-8">Location</p>
+              </dd>
+            </div>
+            <div
+              class="flex flex-col border-t border-b border-gray-100 p-6 sm:border-0 sm:border-l sm:border-r"
+            >
+              <dt
+                class="order-2 mt-2 text-sm leading-6 font-medium text-gray-800"
+              >
+                <p class="ml-8">08 July 2021</p>
+              </dt>
+              <dd class="order-1 text-sm font-extrabold text-gray-600">
+                <div
+                  class="absolute flex items-center justify-center h-6 w-6 rounded-md bg-indigo-200 text-indigo-800"
+                >
+                  <!-- Heroicon name: outline/annotation -->
+                  <svg
+                    class="h-3 w-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <p class="ml-8">Date</p>
+              </dd>
+            </div>
+            <div
+              class="flex flex-col border-t border-gray-100 p-6 sm:border-0 sm:border-l"
+            >
+              <dt
+                class="order-2 mt-2 text-sm leading-6 font-medium text-gray-800"
+              >
+                <p class="ml-8">Moderna</p>
+              </dt>
+              <dd class="order-1 text-sm font-extrabold text-gray-600">
+                <div
+                  class="absolute flex items-center justify-center h-6 w-6 rounded-md bg-indigo-200 text-indigo-800"
+                >
+                  <!-- Heroicon name: outline/annotation -->
+                  <svg
+                    class="h-3 w-3"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+                    />
+                  </svg>
+                </div>
+                <p class="ml-8">Vaccine Type</p>
+              </dd>
+            </div>
+            <div
+              class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l"
+            >
+              <a href="/" class="bg-blue-700 p-3 text-white rounded-md"
+                >Submit</a
+              >
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4">
+          <div
+            class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+          >
+            <img
+              class="h-12"
+              src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+              alt="Tuple"
+            />
+          </div>
+          <div
+            class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+          >
+            <img
+              class="h-12"
+              src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+              alt="Mirage"
+            />
+          </div>
+          <div
+            class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+          >
+            <img
+              class="h-12"
+              src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+              alt="StaticKit"
+            />
+          </div>
+          <div
+            class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1"
+          >
+            <img
+              class="h-12"
+              src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
+              alt="Transistor"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto">
+      <div
+        class="w-full lg:w-1/2 py-10 px-10 md:py-12 md:px-28 lg:py-16 lg:px-28"
+      >
+        <h2 class="text-4xl text-gray-800 font-extrabold pb-4">
+          Why should I vaccine?
+        </h2>
+        <p class="text-lg text-gray-500 font-medium">
+          In order to avoid any doubts about getting the COVID-19 vaccine,
+          identify the following 4 benefits of COVID-19 vaccination:
+        </p>
+      </div>
+    </section>
+
+    <section class="py-12 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-32">
+        <dl class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-4 lg:gap-8">
+          <div class="border-gray-400 shadow-md hover:shadow-xl px-6 py-10">
+            <dt>
+              <!-- Heroicon name: outline/globe-alt -->
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-200 text-indigo-800"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p class="mt-5 text-xl leading-6 font-bold text-gray-900">
+                Minimize the spread of viruses
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              Vaccine has been proven effective to prevent someone from getting
+              infected with Coronavirus
+            </dd>
+          </div>
+
+          <div class="border-gray-400 shadow-md hover:shadow-xl px-6 py-10">
+            <dt>
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-200 text-indigo-800"
+              >
+                <!-- Heroicon name: outline/scale -->
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p class="mt-5 text-xl leading-6 font-bold text-gray-900">
+                Forming antibodies
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              COVID-19 vaccine proven to help shape antibody response for immune
+              system
+            </dd>
+          </div>
+
+          <div class="border-gray-400 shadow-md hover:shadow-xl px-6 py-10">
+            <dt>
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-200 text-indigo-800"
+              >
+                <!-- Heroicon name: outline/lightning-bolt -->
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                  />
+                </svg>
+              </div>
+              <p class="mt-5 text-xl leading-6 font-bold text-gray-900">
+                Protecting people nearby
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              The benefits of COVID-19 vaccination are the vaccine that we get
+              can also help protect people around us
+            </dd>
+          </div>
+
+          <div class="border-gray-400 shadow-md hover:shadow-xl px-6 py-10">
+            <dt>
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-200 text-indigo-800"
+              >
+                <!-- Heroicon name: outline/lightning-bolt -->
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p class="mt-5 text-xl leading-6 font-bold text-gray-900">
+                Creating group immunity
+              </p>
+            </dt>
+            <dd class="mt-2 text-base text-gray-500">
+              COVID-19 vaccination is also beneficial for creating group
+              immunity or herd immunity
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+      <div class="relative my-12 sm:my-16 lg:my-24">
+        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8">
+          <div class="lg:col-start-2">
+            <h3
+              class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl"
+            >
+              Preparation Before Vaccine
+            </h3>
+            <p class="mt-3 text-lg text-gray-500">
+              The success of vaccines is strongly influenced by the strength of
+              the body's immune system. Therefore, there are several things that
+              can be tried to make the COVID-19 vaccine work:
+            </p>
+
+            <dl class="mt-10 space-y-10">
+              <div class="relative">
+                <dt>
+                  <div
+                    class="absolute flex items-center justify-center h-7 w-7 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/annotation -->
+                    <svg
+                      class="h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="ml-12 mr-10 text-lg leading-6 font-medium text-gray-900"
+                  >
+                    Avoid alcoholic beverages
+                  </p>
+                  <div
+                    class="absolute right-0 top-0 flex items-center justify-center h-5 w-5 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/mail -->
+                    <svg
+                      class="h-3 w-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </dt>
+              </div>
+
+              <div class="relative">
+                <dt>
+                  <div
+                    class="absolute flex items-center justify-center h-7 w-7 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/annotation -->
+                    <svg
+                      class="h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="ml-12 mr-10 text-lg leading-6 font-medium text-gray-900"
+                  >
+                    Avoid stress
+                  </p>
+                  <div
+                    class="absolute right-0 top-0 flex items-center justify-center h-5 w-5 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/mail -->
+                    <svg
+                      class="h-3 w-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </dt>
+                <dd class="mt-2 ml-12 mr-10 text-base text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maiores impedit perferendis suscipit eaque, iste dolor
+                  cupiditate blanditiis ratione.
+                </dd>
+              </div>
+
+              <div class="relative">
+                <dt>
+                  <div
+                    class="absolute flex items-center justify-center h-7 w-7 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/annotation -->
+                    <svg
+                      class="h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="ml-12 mr-10 text-lg leading-6 font-medium text-gray-900"
+                  >
+                    Eat healthy food
+                  </p>
+                  <div
+                    class="absolute right-0 top-0 flex items-center justify-center h-5 w-5 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/mail -->
+                    <svg
+                      class="h-3 w-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </dt>
+              </div>
+
+              <div class="relative">
+                <dt>
+                  <div
+                    class="absolute flex items-center justify-center h-7 w-7 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/annotation -->
+                    <svg
+                      class="h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="ml-12 mr-10 text-lg leading-6 font-medium text-gray-900"
+                  >
+                    Get enough sleep
+                  </p>
+                  <div
+                    class="absolute right-0 top-0 flex items-center justify-center h-5 w-5 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/mail -->
+                    <svg
+                      class="h-3 w-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </dt>
+              </div>
+
+              <div class="relative">
+                <dt>
+                  <div
+                    class="absolute flex items-center justify-center h-7 w-7 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/annotation -->
+                    <svg
+                      class="h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <p
+                    class="ml-12 mr-10 text-lg leading-6 font-medium text-gray-900"
+                  >
+                    Exercise or physical activity
+                  </p>
+                  <div
+                    class="absolute right-0 top-0 flex items-center justify-center h-5 w-5 rounded-md bg-indigo-200 text-indigo-800"
+                  >
+                    <!-- Heroicon name: outline/mail -->
+                    <svg
+                      class="h-3 w-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </dt>
+              </div>
+            </dl>
+          </div>
+
+          <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-1 lg:pt-20">
+            <svg
+              class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
+              width="784"
+              height="404"
+              fill="none"
+              viewBox="0 0 784 404"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-200"
+                    fill="currentColor"
+                  />
+                </pattern>
+              </defs>
+              <rect
+                width="784"
+                height="404"
+                fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
+              />
+            </svg>
+            <img
+              class="relative mx-auto"
+              width="490"
+              src="https://github.com/Anzgal/LaunchXFrontCSS/blob/main/assets/girl.png?raw=true"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+      <div class="relative my-12 sm:my-16 lg:my-24">
+        <div class="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8">
+          <div class="lg:col-start-1">
+            <h3
+              class="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl"
+            >
+              Preparation Before Vaccine
+            </h3>
+            <p class="mt-3 text-lg text-gray-500">
+              The success of vaccines is strongly influenced by the strength of
+              the body's immune system. Therefore, there are several things that
+              can be tried to make the COVID-19 vaccine work:
+            </p>
+
+            <dl
+              class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-10 lg:col-span-2"
+            >
+              <div class="p-5 border-gray-400 shadow-md rounded-md">
+                <dt class="flex items-center">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-700"
+                  >
+                    <!-- Heroicon name: outline/globe-alt -->
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z"
+                      />
+                      <path
+                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-xl font-bold text-gray-900">Call</p>
+                    <div class="flex space-x-1 text-sm text-gray-500">
+                      <span> 021.123.145.14 </span>
+                    </div>
+                  </div>
+                </dt>
+                <div class="mt-10 flex">
+                  <a
+                    href="/"
+                    class="bg-indigo-100 text-indigo-700 p-3 w-full rounded-md text-center font-bold"
+                  >
+                    Call Now
+                  </a>
+                </div>
+              </div>
+
+              <div class="p-5 border-gray-400 shadow-md rounded-md">
+                <dt class="flex items-center">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-700"
+                  >
+                    <!-- Heroicon name: outline/globe-alt -->
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-xl font-bold text-gray-900">Chat</p>
+                    <div class="flex space-x-1 text-sm text-gray-500">
+                      <span> 021.123.145.14 </span>
+                    </div>
+                  </div>
+                </dt>
+                <div class="mt-10 flex">
+                  <a
+                    href="/"
+                    class="text-indigo-100 bg-indigo-700 p-3 w-full rounded-md text-center font-bold"
+                  >
+                    Chat Now
+                  </a>
+                </div>
+              </div>
+
+              <div class="p-5 border-gray-400 shadow-md rounded-md">
+                <dt class="flex items-center">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-700"
+                  >
+                    <!-- Heroicon name: outline/globe-alt -->
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-xl font-bold text-gray-900">Video Call</p>
+                    <div class="flex space-x-1 text-sm text-gray-500">
+                      <span> 021.123.145.14 </span>
+                    </div>
+                  </div>
+                </dt>
+                <div class="mt-10 flex">
+                  <a
+                    href="/"
+                    class="bg-indigo-100 text-indigo-700 p-3 w-full rounded-md text-center font-bold"
+                  >
+                    Video Call Now
+                  </a>
+                </div>
+              </div>
+
+              <div class="p-5 border-gray-400 shadow-md rounded-md">
+                <dt class="flex items-center">
+                  <div
+                    class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-100 text-indigo-700"
+                  >
+                    <!-- Heroicon name: outline/globe-alt -->
+                    <svg
+                      class="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                      />
+                      <path
+                        d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-xl font-bold text-gray-900">Message</p>
+                    <div class="flex space-x-1 text-sm text-gray-500">
+                      <span> 021.123.145.14 </span>
+                    </div>
+                  </div>
+                </dt>
+                <div class="mt-10 flex">
+                  <a
+                    href="/"
+                    class="bg-indigo-100 text-indigo-700 p-3 w-full rounded-md text-center font-bold"
+                  >
+                    Message Now
+                  </a>
+                </div>
+              </div>
+            </dl>
+          </div>
+
+          <div class="mt-10 -mx-4 relative lg:mt-0 lg:col-start-2 lg:pt-20">
+            <svg
+              class="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
+              width="784"
+              height="404"
+              fill="none"
+              viewBox="0 0 784 404"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <rect
+                    x="0"
+                    y="0"
+                    width="4"
+                    height="4"
+                    class="text-gray-200"
+                    fill="currentColor"
+                  />
+                </pattern>
+              </defs>
+              <rect
+                width="784"
+                height="404"
+                fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
+              />
+            </svg>
+            <img
+              class="relative mx-auto"
+              width="490"
+              src="https://github.com/Anzgal/LaunchXFrontCSS/blob/main/assets/male-nurse.png?raw=true"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-indigo-100" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-8 xl:col-span-1">
+            <span class="text-2xl font-extrabold text-indigo-700">
+              Vaccination
+            </span>
+            <p class="text-gray-500 text-base max-w-xs">
+              Our goal is to help the world free from the ongoing pandemic
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-md font-bold text-gray-700 tracking-wider uppercase"
+                >
+                  Solutions
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Marketing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Analytics
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Commerce
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Insights
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-md font-bold text-gray-700 tracking-wider uppercase"
+                >
+                  Support
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Guides
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      API Status
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3
+                  class="text-md font-bold text-gray-700 tracking-wider uppercase"
+                >
+                  Company
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      About
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Blog
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Jobs
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Press
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Partners
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-12 md:mt-0">
+                <h3
+                  class="text-md font-bold text-gray-700 tracking-wider uppercase"
+                >
+                  Legal
+                </h3>
+                <ul role="list" class="mt-4 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Claim
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Privacy
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-base text-gray-500 hover:text-gray-900"
+                    >
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-12 border-t border-gray-200 pt-8 md:flex justify-between"
+        >
+          <p class="text-base text-gray-400 text-center md:text-left">
+            &copy; 2020 Vaccination. All rights reserved.
+          </p>
+          <div
+            class="flex space-x-6 mt-5 md:mt-0 justify-center md:justify-start"
+          >
+            <a class="text-base text-gray-400" href="#">Terms & Agreements</a>
+            <a class="text-base text-gray-400" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
